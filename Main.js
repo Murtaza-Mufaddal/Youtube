@@ -10,27 +10,27 @@ sub.addEventListener( "click", () => {
     switch(selectedOption) {
         case "1":
             btn.addEventListener("click", first);
-            alert("you secect 1")
+            
             break;
         case "2":  
         btn.addEventListener("click", second);
-        alert("you secect 2")
+
         break;
         case "3" :
             btn.addEventListener("click", third);
-            alert("you secect 3")
+
             break;
         case "4" :
         btn.addEventListener("click", forth);
-        alert("you secect 4")
+
         break;    
         case "5" :
             btn.addEventListener("click", fifth);
-            alert("you secect 5")
+
             break;
             case "6" :
               btn.addEventListener("click", sixth);
-              alert("you secect 6")
+   
               break;    
         default:
             alert = "invalid";
