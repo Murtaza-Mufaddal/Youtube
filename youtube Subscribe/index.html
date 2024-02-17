@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube.Murtaza</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <form id="submit-to-google-sheet">
+
+
+    <div id="container">
+        <!-- <section> -->
+           <h1>Get Free Subscribers</h1>
+            <div class="main-top">
+                <div class="logo">
+                    <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"/>
+               
+           
+                   
+                    <input type="email"  placeholder="email id" id="email" name="email" class="email" required; />
+                    <input type="url"  placeholder="youtube url" id="url" class="you" name="youtube" required; /> 
+                    <input type="text"  placeholder="account holder name" id="acc" class="acc" name="account" required; /> 
+                                       
+                    <br>
+                    <br>
+                    <br>
+
+                    <select id="SL" class="subscribers" name="subs" required>
+                        
+                        <option value="1">1 subscriber + 1 like = 3 Rs</option>
+                        <option value="2">2 subscribers + 2 likes = 6 Rs</option>
+                        <option value="3">3 subscribers + 3 likes = 9 Rs</option>
+                        <option value="4">4 subscribers + 4 likes = 12 Rs</option>
+                        <option value="5">5 subscribers + 5 likes = 15 Rs </option>
+                        <option value="6">10 subscribers + 10 likes = 30 Rs </option>
+                    </select>
+<!-- 
+                    <select id="SL" class="likes">
+                        
+                        <option value="1">1 likes</option>
+                        <option value="2">2 likes</option>
+                        <option value="3">3 likes</option>
+                        <option value="4">4 likes</option>
+                        <option value="5">5 likes</option>
+                    </select> -->
+
+
+
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="btn" >submit</button>
+             
+    
+             
+    
+
+    
+       
+
+
+    </form>
+
+
+
+
+      
+  </form>
+
+
+  <script>
+
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxtVlOcaSiz3AP8VJ6dkS0F_5dzVMAF-tlcGa7mp0x59QhUlnHo_n0V9pbj4pKPE9ee/exec'
+   const form = document.forms['submit-to-google-sheet']
+ 
+   form.addEventListener('submit', e => {
+     e.preventDefault()
+     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => console.log('Success!', response))
+       .catch(error => console.error('Error!', error.message))
+   })
+
+   
+ </script>
+
+
+
+
+
+
+
+        <script src="Main.js"></script>  
+    
+</body>
+</html>
