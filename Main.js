@@ -36,17 +36,17 @@ sub.addEventListener( "click", () => {
     //         alert = "invalid";
     // }
 
-    if(selectedOption = '1'){
+    if(selectedOption == '1'){
         btn.addEventListener("click", first);
-    } else if(selectedOption = '2'){
+    } else if(selectedOption == '2'){
         btn.addEventListener("click", second);
-    } else if(selectedOption = '3'){
+    } else if(selectedOption == '3'){
         btn.addEventListener("click", third);
-    } else if(selectedOption = '4'){
+    } else if(selectedOption == '4'){
         btn.addEventListener("click", forth);
-    } else if(selectedOption = '5'){
+    } else if(selectedOption == '5'){
         btn.addEventListener("click", fifth);
-    }  else if(selectedOption = '6'){
+    }  else if(selectedOption == '6'){
       btn.addEventListener("click", fifth);
     }  else {
       alert('Invalid input');
