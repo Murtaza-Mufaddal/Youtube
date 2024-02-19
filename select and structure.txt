@@ -1,0 +1,62 @@
+                       username
+                      youtube link
+                subscribe          like  
+                   list            list
+
+                     <select id="selector">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+  <option value="option3">Option 3</option>
+</select>
+
+<script>
+  const selector = document.getElementById('selector');
+
+  selector.addEventListener('change', (event) => {
+    const selectedOption = event.target.value;
+
+    if (selectedOption === 'option1') {
+      // Perform action for option 1
+    } else if (selectedOption === 'option2') {
+      // Perform action for option 2
+    } else if (selectedOption === 'option3') {
+      // Perform action for option 3
+    }
+  });
+</script>
+
+
+// not about you!
+
+
+
+
+
+
+
+
+
+console.log("created by Murtaza");
+
+let sub = document.querySelector(".subscriber");
+let like = document.querySelector(".likes");
+let btn = document.querySelector("#btn");
+
+sub.addEventListener("submit", function() {
+
+
+  let selectedOption = event.target.elements.option.value; // get the selected option value
+  if (selectedOption == "1") {
+ 
+    event.target.elements.option.valuepreventDefault(); // prevent the form from submitting normally
+    
+  }
+});
+
+function redirectToLink() {
+    window.location.href = "https://www.youtube.com/channel/UCuP2vJtq0VkxE3BHWaKlwQ";
+  }
+  
+  
+  
+  btn.addEventListener("click", redirectToLink);
